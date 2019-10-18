@@ -1,3 +1,41 @@
-.rt{
-    margin-top: 100px;
+#top-50{
+    margin: 50px;
+}
+.list{
+    border: solid 2px;
+    padding: 30px;
+    width: 400px;
+}
+.scroll
+{ overflow-y:auto;
+  height: 300px;
+  border: solid 2px grey ;
+  padding: 10px;
+}
+.scroll2
+{ overflow-y:auto;
+  height: 900px;
+  border: solid 1px white;
+  margin: 2px;
+  padding: 10px;
+}
+.bd{
+    margin-top:10px ;
+    border-radius: 12px;
+    border: solid 1.5px silver;
+    padding: 14px;
+}
+.text
+{  
+    max-width: 400px ;
+    word-break: keep-all;
+}
+.cach{
+    border: solid 1px white;
+    height: 10px;
+}
+.delete{
+    border: groove rgb(247, 213, 174);
+    background:  rgb(247, 213, 174);
+    height: 28px;
 }
