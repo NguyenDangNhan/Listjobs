@@ -3,6 +3,7 @@ import './App.css';
 import './component/listjob.css'
 import Morejob from './component/morejobs'
 import Listjob from './component/listjob';
+import Deletejob from './component/delete'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +19,7 @@ class App extends Component {
 
     let s = this.state.listjob
     if (this.state.Jobs !== "") {
-      s.push(<Listjob Jobs={this.state.Jobs} key={this.state.listjob.length} baccau4={this.delete} />)
+      s.push(<Listjob Jobs={this.state.Jobs}  delete={<Deletejob baccau4={this.delete}/>}/>)
       this.setState(
         {
           listjob: s,
@@ -27,10 +28,10 @@ class App extends Component {
       )
     }
   }
-  delete = (h) => {
-    // let s=this.state.listjob
-    // s.splice(h)
-    console.log(this.state.listjob.length)
+  delete = () => {
+     let s=this.state.listjob
+     s.pop()
+    
   }
 
   deleteaddjobs = () => {

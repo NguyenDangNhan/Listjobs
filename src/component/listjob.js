@@ -3,7 +3,7 @@ import './listjob.css'
 class Listjob extends Component {
 delete=()=>
 {
-    this.props.baccau4("h")
+    this.props.baccau4()
 }        
     render(){
         return (
@@ -16,7 +16,7 @@ delete=()=>
               </div>
               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 <div className="r">
-                <button type="button" className="btn btn-warning" onClick={this.delete}>Xóa</button>
+                  {this.props.delete}
                 </div>
               </div>
             </div>
